@@ -24,7 +24,11 @@ body {
   font-family: 'nexa';
   text-shadow: 0 0 20px rgba(0, 153, 255, 1), 0 0 30px rgba(0, 153, 255, 0.8), 0 0 40px rgba(0, 153, 255, 0.6);
 }
-
+#vanta-canvas{
+   
+  margin-top: -40px;
+   width: 100%;
+}
 body {
   position: relative;
   width: 100%;
@@ -226,9 +230,10 @@ img {
   height: auto;
   width: 100%;
   max-width: 550px; /* Restrict max width */
-  margin: 20px auto; /* Center horizontally with margin */
+  margin: 50px auto; /* Center horizontally with margin */
   transition: box-shadow 0.5s ease-out;
   color: aliceblue;
+  
 }
 
 .logo img {
@@ -236,6 +241,7 @@ img {
   max-height: 150px; /* Restrict max height */
   transition: filter 0.5s ease-out;
   filter: drop-shadow(5px 3px 5px rgb(91, 113, 236)); /* More intense glow for the image */
+  margin-top:-30% ;
 }
 
 .logo:hover {
@@ -243,11 +249,19 @@ img {
   /* Apply glow effect to the container */
   /* box-shadow: 0 0 10px 5px white; */
 }
+.about {
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'nexa';
+  text-shadow: 0 0 20px rgba(0, 153, 255, 1), 0 0 30px rgba(0, 153, 255, 0.8), 0 0 40px rgba(0, 153, 255, 0.6);
+  margin-top:-25% ;
+}
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   .gallery {
-    height: 20rem; /* Adjust gallery height for smaller screens */
+    height: 18rem; /* Adjust gallery height for smaller screens */
   }
 
   .wrapper {
@@ -260,13 +274,15 @@ img {
 
   .logo {
     width: 90%; /* Reduce width on smaller screens */
+    margin-top: 20%;
+    align-items: center;
   }
 
   .logo img {
     max-height: 120px; /* Adjust image height for smaller screens */
   }
 }
-
+ 
 @media (max-width: 560px) {
   .gallery {
     height: 15rem; /* Further adjust gallery height for very small screens */
@@ -291,8 +307,53 @@ img {
     max-height: 100px; /* Further reduce image height */
   }
 }
-#vanta-canvas{
-   
-   margin-top: -40px;
-    width: 100%;
+@media (max-width: 558px) {
+  .gallery {
+    height: 16rem; /* Further adjust gallery height for very small screens */
+  }
+
+  .arrows svg {
+    width: 2rem; /* Reduce arrow size for smaller screens */
+    height: 2rem;
+  }
+
+  .arrows .left::before,
+  .arrows .right::before {
+    width: 2rem; /* Adjust width of gradient arrows for small screens */
+    height: 3px;
+  }
+
+  .logo {
+    width: 100%; /* Full width on very small screens */
+  }
+
+  .logo img {
+    max-height: 120px; /* Further reduce image height */
+  }
 }
+
+@media (max-width: 441px) {
+  .gallery {
+    height: 17rem; /* Further adjust gallery height for very small screens */
+  }
+
+  .arrows svg {
+    width: 2rem; /* Reduce arrow size for smaller screens */
+    height: 2rem;
+  }
+
+  .arrows .left::before,
+  .arrows .right::before {
+    width: 2rem; /* Adjust width of gradient arrows for small screens */
+    height: 3px;
+  }
+
+  .logo {
+    width: 100%; /* Full width on very small screens */
+  }
+
+  .logo img {
+    max-height: 120px; /* Further reduce image height */
+  }
+}
+
